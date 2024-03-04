@@ -1,0 +1,50 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.container {
+    margin-left: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 175px);
+    grid-template-rows: repeat(3, 175px);
+    gap: 15px;
+    grid-template-areas:
+        "div1 div2"
+        "div3 div4"
+        "div5 div6";
+}
+
+.div1 { grid-area: div1; }
+.div2 { grid-area: div2; }
+.div3 { grid-area: div3; }
+.div4 { grid-area: div4; }
+.div5 { grid-area: div5; }
+.div6 { grid-area: div6; }
+
+.container img {
+    max-width: 100%;
+    width: 100vw;
+    height: auto;
+    border-width: 1px;
+    border-style: groove;
+}
+
+@media (min-width: 768px) {
+    .container {
+        margin-left: 20px;
+        display: grid;
+        grid-template-columns: repeat(3, 300px);
+        grid-template-rows: repeat(2, 300px);
+        gap: 15px;
+        grid-template-areas:
+            "div1 div2 div3"
+            "div4 div5 div6";
+    }
+}
