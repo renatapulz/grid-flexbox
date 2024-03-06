@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./at3.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400&family=Poppins:wght@100;300;500;700&family=Roboto:ital,wght@0,100;0,400;0,700;1,700&display=swap" rel="stylesheet">
+    <title>Tela de login</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="loginImagePanel">
+                <div class="textImage">
+                    <h1>Sign In to </br>this session</h1>
+                    <p>If you don´t have an account, </br>You can<a href="#"> Register here!</a></p>
+                </div>
+                <div>
+                    <img src="./../assets/images/image-layout-q3.png" alt="">
+                </div>
+            </div>
+            <div class="loginTextbox">
+                <form class="formLogin">
+                    <input class="inputEmail" type="email" name="email" placeholder="Email adress">
+                    <div class="containerEmail">
+                        <input class="inputSenha" type="password" name="password" id="senha" placeholder="Password">
+                        <i class="fa-solid fa-eye-slash icone-olho"></i>
+                    </div>
+                    <a href="#" class="resetCredentials">Forgot password?</a>
+                    <button type="submit">Sign In</button>
+                </form>
+                <div class="divider">
+                    <hr class="line-divider">
+                    <p> Or </p>
+                    <hr class="line-divider">
+                </div>
+                <div class="alternativeLogin">
+                    <a href="#">
+                        <button type="button">
+                            <span class="icon">
+                                <i class="fa-brands fa-google" style="color: #74C0FC;"></i>
+                            </span>
+                            Continue with Google
+                        </button>
+                    </a>
+                    <a href="#">
+                        <button type="button">
+                            <span class="icon">
+                                <i class="fa-brands fa-facebook-f" style="color: #74C0FC;"></i>
+                            </span>
+                            Continue with Facebook
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="ativ3.js"></script>
+</body>
+
+</html>

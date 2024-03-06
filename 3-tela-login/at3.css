@@ -1,0 +1,175 @@
+html,body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    height: 100vh;
+    background-image: url("./../assets/images/background-layout-q3.jpg");
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    height: 90vh;
+    max-height: 720px;
+    width: 80vw;
+    max-width: 980px;
+    border-radius: 40px;
+    box-sizing: border-box;
+    align-self: center;
+    position: relative;
+}
+
+.loginImagePanel {
+    width: 55%;
+    height: auto;
+}
+
+.textImage {
+    padding: 20px 0px 0px 90px;
+    font-size: 18px;
+}
+
+.textImage h1 {
+    color: rgb(71, 70, 70);
+}
+
+.textImage a {
+    color: rgb(7, 115, 224);
+    font-weight: bolder;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.loginImagePanel img {
+    width: 380px;
+    height: auto;
+    position: absolute;
+    bottom: 20px;
+    left: 100px;
+}
+
+.loginTextbox {
+    width: 45%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+form {
+    width: 250px;
+}
+
+form * {
+    margin-bottom: 20px;
+}
+
+.formLogin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.resetCredentials {
+    margin-left: auto;
+    color: #505050;
+    text-decoration: none;
+}
+
+form button,form input {
+    width: 250px;
+    height: 36px;
+    border-radius: 6px;
+    border: none;
+}
+
+form button {
+    background-color: #4460f1;
+    color: white;
+}
+
+button:active {
+    transform: translateY(1px);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+form input {
+    background-color: #d0e3f9;
+    color: #505050;
+}
+
+input::placeholder {
+    padding-left: 10px;
+}
+
+.divider {
+    display: flex;
+    justify-content: space-around;
+    width: 250px;
+    align-items: center;
+}
+
+.line-divider {
+    margin: 0 10px;
+    flex-grow: 1;
+    height: 1px;
+    width: 50px;
+    color: #868383e0;
+    margin-top: -1px;
+}
+
+.alternativeLogin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.alternativeLogin button {
+    width: 250px;
+    height: 36px;
+    border: 1px solid #908f8fa3;
+    border-radius: 6px;
+    margin-top: 10px;
+    background-color: white;
+    font-size: 14px;
+    color: #505050;
+}
+
+.icon {
+    display: inline-block;
+    /* Faz o ícone ficar ao lado do texto */
+    margin-right: 10px;
+}
+
+.containerEmail {
+    position: relative;
+    display: inline-block;
+}
+
+.icone-olho {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-115%);
+    cursor: pointer;
+    color: #505050;
+}
+
+/* tirar conf do olhinho que vem por padrão no campo senha */
+.inputSenha::-ms-reveal,
+.inputSenha::-webkit-contacts-auto-fill-button,
+.inputSenha::-webkit-credentials-auto-fill-button {
+    display: none;
+}
