@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./at4.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400&family=Poppins:wght@100;300;500;700&family=Roboto:ital,wght@0,100;0,400;0,700;1,700&display=swap"
+        rel="stylesheet">
+    <title>Tela de cadastro</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="registerImagePanel">
+                <div class="Images">
+                    <img class="logo" src="./../assets/images/logo-q4.png" alt="Logo">
+                </div>
+                <div>
+                    <img class="decorative-picture" src="./../assets/images/image-layout-q4.png"
+                        alt="Decorative Picture">
+                </div>
+            </div>
+            <div class="registerTextbox">
+                <h1>Create an account</h1>
+                <p>Setup a free account to get access to unlimited courses</p>
+                <form class="formRegister">
+                    <label for="inputName">Full name</label>
+                    <input id="inputName" type="text" name="name" placeholder="Please enter the full name" required>
+                    <label for="inputUsername">Username</label>
+                    <input id="inputUsername" type="text" name="username" placeholder="Please enter your name" required>
+                    <label for="inputEmail">Email</label>
+                    <input id="inputEmail" type="email" name="email" placeholder="Please enter your email" required>
+                    <label for="inputSenha">Password</label>
+                    <input id="inputSenha" type="password" name="password" placeholder="Please enter a password"
+                        required>
+                    <label for="inputPhoneDDD">Phone number</label>
+                    <div class="telInput">
+                        <input type="text" id="inputPhoneDDD" name="ddd" maxlength="3" placeholder=" +1" required>
+                        <input type="tel" id="inputPhone" name="telefone" maxlength="9"
+                            placeholder="Please enter your phone number" required>
+                    </div>
+                    <button type="submit">Sign Up</button>
+                    <a href="#" class="login">Already have an account? Login</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
