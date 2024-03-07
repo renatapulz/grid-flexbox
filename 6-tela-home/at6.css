@@ -1,0 +1,189 @@
+html,body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    box-sizing: content-box;
+}
+
+body {
+    background-color: #000;
+}
+
+.container {
+    padding-top: 75px;
+}
+
+
+header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 75px;
+    justify-content: space-between;
+    align-items: center;
+    background: #000;
+}
+
+.menu {
+    position: absolute;
+    display: none;
+    top: 32px;
+    right: 67px;
+    background: #333;
+    padding: 10px 15px;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul li {
+    padding: 5px 0;
+}
+
+.menu.show {
+    display: block;
+}
+
+.menu a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu-toggle {
+    color: white;
+    cursor: pointer;
+    font-size: 30px;
+    align-self: center;
+    padding-right: 30px;
+}
+
+.logo img {
+    width: 160px;
+    height: auto;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+}
+
+.content-text {
+    height: 70vh;
+    width: 50vw;
+    padding: 20px;
+}
+
+.content-text h1 {
+    color: #FFFFFF;
+    font-size: 3em;
+}
+
+.content-text p {
+    color: #B2B2B2;
+}
+
+.ponto {
+    color: #FFBF00;
+    font-size: 30px;
+}
+
+.botao-banner {
+    background-color: #FFBF00;
+    color: #332200;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.image img {
+    width: 90vw;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 30px;    
+}
+
+@media (min-width: 414px) {
+    .content-text {
+        height: 50vh;
+        width: 50vw;
+        padding: 20px;
+    }
+}
+
+@media (min-width: 768px) { 
+    .menu {
+        display: block;
+        background: none;
+        position: static;
+    }
+    
+    .menu ul {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .content {
+        flex-direction: row;
+        margin-left: 20px;
+    }
+
+    .content-text {
+        height: 50vh;
+        width: 50vw;
+        padding: 20px;
+    }
+
+    .image img {
+        width: 50vw;
+        height: auto;
+        margin-top: 10px;
+        margin-bottom: 30px; 
+        margin-right: 20px;   
+    }
+}
+
+@media (min-width: 1700px) {
+    .content {
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-bottom: 100px;
+    }
+    .image img {
+        max-width: 650px;
+        width: 50vw;
+        height: auto;
+    }
+    .content-text {
+        height: 50vh;
+        width: 40vw;
+        padding: 20px;
+    }
+    .content-text h1 {
+        font-size: 4em;
+    }
+    .content-text p {
+        font-size: 2em;
+    }
+    .botao-banner {
+        font-size: 2em;
+    }
+
+    
+}
+
